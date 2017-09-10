@@ -13,6 +13,9 @@ jobs:
           command: npm install
       - run:
           name: package
+          command: npm run build:production
+      - run:
+          name: package
           command: npm run package
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
