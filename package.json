@@ -8,7 +8,7 @@
     "test": "nyc ts-node node_modules/tape/bin/tape",
     "build:developement": "rollup -c rollup.config.js",
     "build:production": "cross-env NODE_ENV=production rollup -c rollup.config.js",
-    "package": "pkg target/index.js"
+    "package": "pkg --out-path dist target/index.js"
   },
   "keywords": [],
   "author": "",

@@ -12,11 +12,17 @@ jobs:
           name: install module
           command: npm install
       - run:
-          name: package
+          name: build
           command: npm run build:production
       - run:
           name: package
           command: npm run package
+      - run:
+          name: status
+          command: git status
+      - store_artifacts:
+          path: dist
+          destination: binary
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
