@@ -18,9 +18,7 @@ const m = {
       jsnext: true,
       main: true,
     }),
-    commonjs({
-      namedExports: { "./src/parser": ["parse"] },
-    }),
+    commonjs(),
     env.NODE_ENV === "production" && uglify({}, minify),
   ],
 }

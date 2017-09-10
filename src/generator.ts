@@ -1,4 +1,6 @@
-import { parse } from "./parser"
+import parser from "./parser"
+
+const parse = parser.parse
 
 /* eslint-disable no-unused-vars */
 import * as ast from "./ast"
