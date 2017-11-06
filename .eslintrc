@@ -1,22 +1,27 @@
 {
-	"extends": "eslint:recommended",
-	"parser": "typescript-eslint-parser",
-	"env": {
-		"browser": true,
-		"es6": true,
+  "extends": "eslint:recommended",
+  "parser": "typescript-eslint-parser",
+  "env": {
+    "browser": true,
+    "es6": true,
     "node": true
-	},
-	"parserOptions": {
-		"ecmaVersion": 6,
-		"sourceType": "module"
-	},
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
   "plugins": [
     "prettier"
   ],
-	"rules": {
+  "rules": {
     "prettier/prettier": [
       "error",
-      { "trailingComma": "all", "singleQuote": false , "semi": false, "spaceBeforeFunctionParen":true }
+      {
+        "trailingComma": "all",
+        "singleQuote": false,
+        "semi": false,
+        "spaceBeforeFunctionParen": true
+      }
     ],
     "quotes": [
       "error",
@@ -34,16 +39,16 @@
     "prefer-const": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
-		"no-console": "off",
-		"no-undefined": "error",
-		"dot-notation": "error",
-		"no-extra-bind": "error",
-		"no-multi-spaces": "error",
-		"no-useless-return": "error",
-		"wrap-iife": "error",
-		"no-lonely-if": "error",
-		"no-spaced-func": "error",
-		"space-in-parens": "error",
-		"space-infix-ops": "error",
-	}
+    "no-console": "off",
+    "no-undefined": "error",
+    "dot-notation": "error",
+    "no-extra-bind": "error",
+    "no-multi-spaces": "error",
+    "no-useless-return": "error",
+    "wrap-iife": "error",
+    "no-lonely-if": "error",
+    "no-spaced-func": "error",
+    "space-in-parens": "error",
+    "space-infix-ops": "error"
+  }
 }
